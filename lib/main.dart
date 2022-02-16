@@ -10,9 +10,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Моя перша програма'),
+          title: const Text('Моя перша програма'),
         ),
-        body: Text('Default text!'),
+        body: Column(
+          children: const <Widget>[
+            Text('The question!'),
+            ElevatedButton(
+              onPressed: null,
+              child: Text('Answer 1'),
+            ),
+            ElevatedButton(
+              onPressed: null,
+              child: Text('Answer 2'),
+            ),
+            ElevatedButton(
+              onPressed: null,
+              child: Text('Answer 2'),
+            )
+          ],
+        ),
       ),
     );
   }
